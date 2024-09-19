@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Gilroy;
+    src: url('Gilroy-Light.otf') format('truetype'); 
+    font-weight: url('Gilroy-ExtraBold.otf');
+}
 
 
 body{
@@ -5,9 +10,9 @@ body{
     gap: 20px 20px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    font-family: "Questria", sans-serif;
     height: calc(100vh - 2*20px);
     margin: 15px;
+    font-family: Gilroy;
 }
 
 .header{
@@ -100,21 +105,39 @@ div{
 #sofa{
     display: flex;
     border-radius: 10px;
-    width: 300px;
-    height: 170px;
+    width: 360px;
+    height: 180px;
     align-self: flex-start;
-    padding-top: 50px;
+    margin-top: 0px;
+}
+
+#seta2{
+    display: flex;
+    justify-self: flex-end;
+    grid-row: 1;
+    padding-right: 10px;
+
+}
+
+#muse{
+    display: flex;
+    justify-self: flex-start;
+    padding-left: 25px;
+    grid-row: 2;
+    margin-top: -110px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .barra{
     background-color: #F8AFA6;
     height: 2px;
-    width: 300px;
+    width: 360px;
 }
 
-.lista p{
-    display: flex;
-    text-align: left;
+.nomes{
+    padding-right: 300px;
+    margin-top: 40px;
 }
 
 .sobre{
@@ -137,7 +160,7 @@ div{
     background-color: #F8AFA6;
     grid-row: 8 / 13;
     grid-column: 4 / 8;
-    padding: 0px 0px 0px 0px;
+    align-content: flex-start;
 }
 
 .contato h1{
@@ -145,19 +168,41 @@ div{
     align-items: last baseline;
 }
 
-.contato p{
+h4{
     display: flex;
-    grid-template-columns: 4;
-    margin: 0px;
-    align-self: flex-start;
+    justify-self: flex-start;
+    padding-left: 15px;
+}
+
+.contact{
+    display: flex;
+    padding-top: 130px;
+    padding-right: 150px;
+    font-size: 40px;
 }
 
 #seta{
-    grid-column: 7 / 8;
-    padding: 0px 10px 5px 5px;
+    display: flex;
+    justify-self: flex-end;
+    align-self: self-start;
+    padding-right: 10px;
+    padding-top: 15px;
+    
 }
 
 .social{
     grid-row: 11 / 13;
     grid-column: 8 / 13;
+    justify-content: space-between;
+}
+
+.sociais{
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+}
+
+.sociais li{
+    margin-left: 30px;
+    font-style: italic;
 }
